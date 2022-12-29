@@ -1,0 +1,74 @@
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .error
+  {
+    text-align: center;
+    color: rgb(238, 117, 117);
+    font-size: 22px;
+  }
+    .lds-hourglass {
+      /* text-align: center; */
+      display: inline-block;
+      position: relative;
+      left:700px;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-hourglass p{
+      color: white;
+      font-size: 22px;
+    }
+    .lds-hourglass:after {
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      margin: 8px;
+      box-sizing: border-box;
+      border: 32px solid #ccc;
+      border-color: green transparent green transparent;
+      animation: lds-hourglass 1.2s infinite;
+    }
+    @keyframes lds-hourglass {
+      0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+      50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      100% {
+        transform: rotate(1800deg);
+      }
+    }
+    
+  
+  .meals_loading
+  {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

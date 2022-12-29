@@ -1,0 +1,126 @@
+.cart_items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+    max-height: 20rem;
+    overflow: scroll;
+  }
+ 
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    margin: 1rem 0;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  .actions .tasty
+  {
+    background-color: rgb(0, 203, 0);
+    color: #fff;
+    font-size: 17px;
+    border-color: #fff;
+    
+  }
+  .actions.tasty button:hover,
+  .actions.tasty button:active 
+ 
+  {
+    background-color:rgb(0, 110, 0) ;
+    color: #fff;
+  }
+  .lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    left: 450px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: rgb(209, 79, 79);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgb(209, 79, 79);
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  .sending
+  {
+    font-size: 22px;
+    font-weight: bold;
+    /* padding: 2%; */
+  }
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #3f3f3f;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: rgb(2, 50, 152);
+    color: #fff;
+    /* border-color: #5a1a01; */
+    /* color: white; */
+  }
+  
+  .actions .button__alt {
+    color: #000;
+  }
+  
+  .actions .button {
+    background-color: #0AF;
+    border: none;
+    color: white;
+  }
